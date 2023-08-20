@@ -21,12 +21,5 @@ if __name__ == "__main__":
 
         GroundHumiditySensor.GetSensorReading = GetGroundHumiditySensor_decorator(GroundHumiditySensor.GetSensorReading)
         del GroundHumiditySensor
-
-    if(True):
-        import unittest
-        
-            
-
-        del unittest
     
     main()
