@@ -4,7 +4,6 @@ import GroundHumidityController
 
 if(True): # Add Decorator
     import GroundHumiditySensor
-
     def GetGroundHumiditySensor_decorator(f):
         def inner():
             return_value = f()
@@ -13,7 +12,7 @@ if(True): # Add Decorator
         return inner
 
     GroundHumiditySensor.GetSensorReading = GetGroundHumiditySensor_decorator(GroundHumiditySensor.GetSensorReading)
-
+    del GroundHumiditySensor
 
 def main():
     while(True):
