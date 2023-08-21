@@ -3,5 +3,5 @@ LOWER_BOUND = 0
 UPPER_BOUND = 255
 
 def SetWaterFlow(value: int) -> None:
-    print("Set MG996R value to: " + str(value))
+    ## Pretend this controls the pwm
     return
