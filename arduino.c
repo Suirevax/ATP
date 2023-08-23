@@ -2,5 +2,5 @@
 
 
 void analogWrite(int pin, int value){
-    printf("C: dummy arduino analog_write: %i\n", value);
+    printf("dummy arduino analog_write: %i to pin: %i\n", value, pin);
 }
