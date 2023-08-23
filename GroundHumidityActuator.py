@@ -9,16 +9,12 @@ UPPER_BOUND = 255
 import ctypes
 import pathlib
 
-if __name__ == "__main__":
-    # Load the shared library into ctypes
-    # libname = pathlib.Path().absolute() / "arduino.so"
-    # c_lib = ctypes.CDLL(libname)
+PIN_NUMBER = 2
 
-# libname = "c:\\Users\\rxpja\\Documents\\ATP\\automatische-plantenkas\\arduino.so"
-# ctypes.cdll.LoadLibrary("arduino.so")
-    libObject = ctypes.CDLL('arduino.so')
+libname = pathlib.Path().absolute() / "arduino.so"
+libObject = ctypes.CDLL(libname)
 
 def SetWaterFlow(value: int) -> None:
     ## Pretend this controls the pwm
-    arduino_lib.pwm_write(value)
+    libObject.analogWrite(PIN_NUMBER,int(value))
     return

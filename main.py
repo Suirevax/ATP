@@ -22,11 +22,11 @@ if __name__ == "__main__":
         GroundHumiditySensor.GetSensorReading = GetGroundHumiditySensor_decorator(GroundHumiditySensor.GetSensorReading)
         del GroundHumiditySensor
     
-    if(True): # systemtest
+    if(False): # systemtest
         print("Prepare systemtest")
         import random
         
-        import GroundHumiditySensor
+        import GroundHumiditySensor 
         def SystemTest_GroundHumidity_SensorReading():
             return_value = random.randrange(GroundHumiditySensor.LOWER_BOUND, GroundHumiditySensor.UPPER_BOUND)
             print("GetHumiditySensor Return value:", return_value)
