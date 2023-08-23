@@ -23,7 +23,7 @@ OK
 ```
 
 ## Systeem test
-De syteem test vervangt de sensoren functies met functies die willekeurige getallen genereren. De Actuator functie worden vervangen met functies die alleen hun ontvangen waarde loggen.
+De syteem test vervangt de sensoren functies met functies die willekeurige getallen genereren. De Actuator functie wordt vervangen met functies die alleen hun ontvangen waarde loggen.
 De systeem test is uit te voeren door deze aan te zetten in `main.py` (regel 25).
 Resultaat:
 ```
