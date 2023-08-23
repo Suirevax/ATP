@@ -53,3 +53,6 @@ LightIntensityActuatorAction: 134.74135563219093
 
 ## C Binding
 De C binding is te vinden in `GroundHumidityActuator.py`. Deze vormt een binding met arduino.so om de functionaliteit van de servo motor te implementeren.
+
+# Testplan afwijking
+Uiteindelijk ben ik redelijk wat afgeweken van het originele plan. Ik heb geen classes gebruikt en geen Interfaces geimplementeerd. De reden hiervoor was simpel weg vermindering van onnodige complexiteit. Wel is alsnog sterk de focus gelegd op de grond vochtigheids regel functionaliteit van het systeem vanwege de ernstigere schade die het aan kan richten in het geval van verkeerd gedrag.
